@@ -1,0 +1,143 @@
+<!-- 
+Doctype ?
+viewport ?
+HTML structure
+Inline and block elements
+HTMl is not case sensitive
+p 
+h1 - h6
+a 
+<img, absolute and relative urls
+attributes
+Self closing tags
+pre tag, sub - subscript and sup - superscript
+<p> use <br> for make multiline
+Inline, Internal and external CSS
+color
+background-color
+text-decoration
+text-aline
+font-size
+font-family
+border: 1px solid red;
+Style - precedence - Inline is having more precedence.
+alt tag in img
+width and height property in img
+font-weight
+<b>test</b> or we can give using class as well
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text - Yellow bg
+<small> - Smaller text
+<del> - Deleted text - Sticked out content
+<ins> - Inserted text - Will have underline
+<sub> - Subscript text (2 <sup>3</sup>) => 2 power 3;
+<sup> - Superscript text ex - H20 (H<sub>2</sub>)
+
+
+<abbr>	Defines an abbreviation or acronym - Shows tooltip on hover
+<address>	Defines contact information for the author/owner of a document -Italic and linebreaks
+<bdo>	Defines the text direction rtl
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work -> Italic
+<q>	Defines a short inline quotation
+ to add comment
+shortcut ctrl + \ -> comments the code.
+
+color -> Hex, RGB, HSL
+RGBA, HSLA -> rgba(255, 99, 71, 0.5);
+0.5 is opacity
+Preferred is Hex
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Basics</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <script type="text/javascript" src="src/main.js"></script>
+    <style>
+        h1 {
+            color: rgb(79, 35, 180);
+        }
+
+        .blueTitle {
+            color: blue;
+            text-decoration: underline;
+            border: 1px solid red;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>This is heading 1</h1>
+    <h2 class="blueTitle">This is heading 2</h2>
+    <h3>This is heading 3</h3> -->
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <p>This is my first paragraph</p>
+    <p class="blueTitle" style="border: 0;">This is my second paragraph</p>
+
+    <a href="https://www.w3schools.com">This is a link</a>
+    <br />
+    <br />
+    <button class="anchorButton">Button as 'a'</button>
+    <br />
+    <br />
+    <img src="../assets/images/squirrel.jpg" alt="W3Schools.com" width="200" height="200" />
+    <br />
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    <pre>
+        My Bonnie lies over the ocean.
+
+        My Bonnie lies over the sea.
+
+        My Bonnie lies over the ocean.
+
+        Oh, bring back my Bonnie to me.
+    </pre>
+
+    <h1 style="font-family:Arial, Helvetica, sans-serif;">This is a heading</h1>
+    <p style="font-family:'Times New Roman', Times, serif;">This is a paragraph.</p>
+
+    <p>This is normal text</p>
+    <p><b>This is text with bold tag</b></p>
+    <p class="boldText">This is bold text</p>
+
+    <button>Submit</button>
+    <a href="./iframe.html" target="_blank">Visit W3Schools!</a>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div>
+        <iframe src="./iframe.html" height="200" width="300" title="Iframe Example"></iframe>
+    </div>
+
+    <a href="https://www.google.com" target="_blank"><img src="../assets/images/smiley.gif" alt="smiley" width="100"
+            height="100" /></a>
+
+    <a href="mailto:someone@example.com">Send email</a>
+
+    <button onclick="navigate()">HTML Tutorial</button>
+
+    <button onclick="navigateToAnotherWindow()">HTML Tutorial</button>
+
+</body>
+
+</html>
