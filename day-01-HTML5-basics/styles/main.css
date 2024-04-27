@@ -30,3 +30,18 @@ button:hover {
     background-color: aqua;
     border: 1px solid red;
 }
+
+.custom-link:active {
+    color: #000;
+}
+
+.linkAsButton {
+    background-color: red;
+    padding: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.linkAsButton:hover {
+    background-color: rgb(14, 228, 18);
+}
