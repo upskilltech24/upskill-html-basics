@@ -1,0 +1,32 @@
+.anchorButton {
+    border: 0;
+    background: none;
+    text-decoration: underline;
+    color: blue;
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    border: 2px dashed red;
+    display: block;
+    opacity: 50%;
+}
+
+h3 {
+    color: brown;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+button {
+    color: red;
+}
+
+button:hover {
+    color: black;
+    background-color: aqua;
+    border: 1px solid red;
+}
