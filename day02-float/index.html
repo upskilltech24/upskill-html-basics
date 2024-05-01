@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/icon.ico">
+    <style>
+        .main {
+            border: 2px solid gray;
+            background-color: cadetblue;
+            height: 400px;
+            background-image: url(../assets/images/smiley.gif);
+        }
+
+        .childContainer {
+            height: 100%;
+            margin: 0 auto;
+            border: 1px solid red;
+            width: 80%;
+            clear: both;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            border: 1px solid red;
+            margin: 10px;
+        }
+
+        .fL {
+            float: left;
+        }
+
+        .fR {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="childContainer">
+            <div class="child fL">
+                CHILDREN 1
+            </div>
+            <div class="child fL">
+                CHILDREN 1
+            </div>
+            <div class="child fR">
+                CHILDREN 3
+            </div>
+            <div class="child fR">
+                CHILDREN 4
+            </div>
+            <div class="child fR">
+                CHILDREN 5
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

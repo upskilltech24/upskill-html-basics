@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using div</title>
+    <script>
+        function onPageLoad() {
+            const collection = document.getElementsByClassName('para');
+            for (count = 0; count < collection.length; count++) {
+                console.log(collection[count].innerHTML);
+            }
+        }
+        function printSeries(table) {
+            let total = 0;
+            for (let count = 1; count <= 10; count++) {
+                total = total + (count * table);
+            }
+            console.log(total);
+        }
+        printSeries(10);
+        printSeries(2);
+
+
+    </script>
+    <style>
+        div {
+            padding: 10px;
+        }
+
+        .container3 {
+            display: flex;
+        }
+
+        .container3 div {
+            width: 30%;
+            border: 1px solid red;
+        }
+
+        .para {
+            color: red;
+        }
+    </style>
+</head>
+
+<body onload="onPageLoad()">
+    <div style="width: 90%;border: 1px solid red; margin: 0 auto;background-color: #CCC;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem porro nisi, commodi aperiam
+            minus minima ipsa architecto deleniti fugiat veniam in voluptatem sapiente repudiandae, fuga maiores
+            laudantium tempore tempora asperiores dignissimos, rerum animi voluptatum unde? Blanditiis, numquam ut harum
+            obcaecati, inventore dolorem temporibus molestiae pariatur iste dolores nobis aspernatur repellendus minus
+            incidunt quas eum, id at dicta odio sapiente! Facilis provident cum iure sint magnam saepe incidunt
+            accusantium, eius repellat ea. Quas eius ratione numquam amet ut officiis, velit aliquam ab voluptatem. Aut
+            asperiores, quis eligendi dolorum quam dolores ipsa natus facere, corporis nisi quasi, ex expedita doloribus
+            deserunt?</p>
+    </div>
+
+    <h1>Multiple DIV Elements</h1>
+
+    <div style="background-color:#FFF4A3;float: left;">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+
+    <div style="background-color:#FFC0C7;float: left;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+
+    <div style="background-color:#D9EEE1;float: left;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+    <div style="clear: both"></div>
+    <p>CSS styles are added to make it easier to separate the divs, and to make them more pretty:)</p>
+    <div class="container3">
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis et inventore omnis animi consequuntur
+            eum, earum voluptas at officia voluptatibus error dignissimos dolor saepe laborum in cum! Asperiores
+            recusandae ea facere sequi corporis suscipit autem sint modi, sunt adipisci saepe nam animi quo iure, vel
+            cupiditate ex consequuntur ipsam non.</div>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis necessitatibus inventore ipsam, voluptatum
+            cumque adipisci consequuntur deserunt cupiditate reiciendis? Consequuntur sapiente eos aspernatur
+            exercitationem modi quaerat iusto deserunt, eaque similique quas quisquam voluptatum tempora recusandae!
+            Veniam deleniti omnis cupiditate vitae sit aspernatur obcaecati ea voluptas architecto at sequi cum ex
+            voluptate dolor, maiores deserunt ipsa quasi fuga eligendi necessitatibus cumque eius. Labore aut assumenda
+            voluptates nobis, iure nam officiis doloribus molestias expedita inventore repellendus cumque ratione quo
+            animi tempora consequuntur similique quos laudantium quae magnam exercitationem! Ratione magnam voluptatibus
+            quaerat consectetur eligendi pariatur voluptatum, animi sunt ut unde quas ea.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, explicabo expedita! At sit repudiandae
+            laudantium consequatur error itaque, laborum aperiam asperiores culpa excepturi. Veritatis soluta odio ullam
+            nulla. Commodi consectetur placeat aspernatur aliquam eum cupiditate harum tenetur magni ab obcaecati? Eum
+            vitae dolorem illo quos veritatis aspernatur hic recusandae cupiditate distinctio nemo officiis, in
+            reprehenderit nisi velit, sequi molestiae harum, deleniti obcaecati molestias aliquid! Reiciendis deserunt
+            nostrum consequuntur quo, modi numquam a unde corrupti sequi commodi quia voluptatibus? Voluptatibus vero id
+            illo praesentium perferendis sed quae repudiandae reiciendis ab aliquam. Recusandae ratione itaque,
+            voluptatem quae facere culpa quam est illum? Suscipit temporibus ipsa aliquam fugiat soluta similique at
+            corrupti quibusdam eius. Error optio aperiam corrupti voluptatum eligendi exercitationem ducimus minima
+            saepe necessitatibus maiores neque, nisi quae nobis laboriosam, impedit quia temporibus corporis numquam non
+            sapiente soluta voluptatibus? Libero, iste. Tempore ex quaerat officiis dolore non doloribus. Vitae, officia
+            nostrum. Repellendus magnam architecto illo repellat perspiciatis, sequi vel inventore obcaecati qui
+            ratione? Aliquam quam hic reiciendis quaerat culpa laboriosam nemo tempore corporis eius earum odio amet
+            impedit vel laudantium, rerum architecto saepe illum vitae, dolores facere, ad minima necessitatibus natus
+            dolor! Quos quasi veritatis dolorum facere harum non architecto quae voluptas.</div>
+    </div>
+
+    <div>
+        <p class="para">TEST1</p>
+        <p class="para">TEST2</p>
+        <p class="para">TEST3</p>
+        <p class="para">TEST4</p>
+    </div>
+
+    <p><a href="../day-01-HTML5-basics/index.html" target="iframe_a">W3Schools.com</a></p>
+    <iframe src="../day04-tables/index.html" name="iframe_a" style="border: 0px;" height="400" width="100%"
+        title="Iframe Example"></iframe>
+</body>
+
+</html>

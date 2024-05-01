@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive designs</title>
+    <style>
+        .child {
+            height: 200px;
+            border: 1px solid red;
+            width: 100%;
+        }
+
+        .division1 {
+            background-color: aquamarine;
+        }
+
+        .division2 {
+            background-color: rgb(202, 23, 68);
+        }
+
+        .division3 {
+            background-color: rgb(19, 8, 236);
+        }
+
+        @media screen and (min-width: 800px) {
+            .child {
+                float: left;
+                width: 33%;
+            }
+        }
+
+        .cL {
+            clear: both;
+        }
+
+        .flexMainContainer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flexChild {
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .flexDivision1 {
+            background-color: chartreuse;
+        }
+
+        .flexDivision2 {
+            background-color: rgb(249, 131, 12);
+        }
+
+        .flexDivision3 {
+            background-color: rgb(240, 68, 134);
+        }
+
+        @media screen and (min-width: 800px) {
+            .flexMainContainer {
+                flex-direction: row;
+            }
+
+            .flexChild {
+                width: 33%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="child division1">Container 1</div>
+        <div class="child division2">Container 2</div>
+        <div class="child division3">Container 3</div>
+    </div>
+    <div class="cL"></div>
+    <div class="flexMainContainer">
+        <div class="flexChild flexDivision1">Container 1</div>
+        <div class="flexChild flexDivision2">Container 2</div>
+        <div class="flexChild flexDivision3">Container 3</div>
+    </div>
+</body>
+
+</html>

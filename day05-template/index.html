@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML template</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .mainContainer {
+            background-color: #CCC;
+            width: 90%;
+            min-height: 400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            height: 150px;
+            background-color: aqua;
+        }
+
+        .footer {
+            height: 50px;
+            background-color: rgb(141, 144, 218);
+        }
+
+        .content {
+            height: 600px;
+        }
+
+        .menu {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            list-style-type: none;
+            background-color: rgb(60, 147, 223);
+            padding: 10px;
+            flex: 1;
+            border: 1px solid rgb(8, 130, 238);
+        }
+
+        section div {
+            float: left;
+        }
+
+        .subMenus {
+            width: 20%;
+            border: 1px solid #d31818;
+            height: 600px;
+        }
+
+        .details {
+            width: 70%;
+        }
+
+        aside ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside ul li {
+            list-style-type: none;
+            height: 30px;
+            border: 1px solid #4733dc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <header>
+            <div class="header"></div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>Menu 1</li>
+                <li>Menu 2</li>
+                <li>Menu 3</li>
+                <li>Menu 4</li>
+                <li>Menu 5</li>
+            </ul>
+        </nav>
+        <div class="content">
+            <section>
+                <div class="subMenus">
+                    <aside>
+                        <ul>
+                            <li>Side menu 1</li>
+                            <li>Side menu 2</li>
+                            <li>Side menu 3</li>
+                            <li>Side menu 4</li>
+                        </ul>
+                    </aside>
+                </div>
+                <div class="details">
+                    <article>Description</article>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="footer"></div>
+        </footer>
+    </div>
+</body>
+
+</html>
