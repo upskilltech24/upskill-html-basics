@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            /* justify-content: flex-start;
+            /* align-items: center */
+            /* justify-content: center;*/
+            /* align-items: stretch; */
+        }
+
+        .flex-content {
+            width: 300px;
+            background-color: aquamarine;
+            margin: 5px;
+        }
+
+        .child1 {
+            /* flex-grow: 1; */
+            /* flex: 1; */
+            flex-shrink: 3;
+        }
+
+        .child2 {
+            /* flex-grow: 1; */
+            /* flex: 1; */
+            flex-shrink: 2;
+        }
+
+        .child3 {
+            flex-shrink: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-content child1">1</div>
+        <div class="flex-content child2">1</div>
+        <div class="flex-content child3">1</div>
+        <div class="flex-content">1</div>
+        <!-- <div class="flex-content">1</div>
+        <div class="flex-content">1</div>
+        <div class="flex-content">1</div>
+        <div class="flex-content">1</div>
+        <div class="flex-content">1</div>
+        <div class="flex-content">1</div>
+        <div class="flex-content">1</div> -->
+    </div>
+</body>
+
+</html>
