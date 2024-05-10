@@ -106,3 +106,10 @@ footer div {
         flex-direction: column;
     }
 }
+
+.textBorder {
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    color: red;
+}
