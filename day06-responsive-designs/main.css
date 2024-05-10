@@ -25,26 +25,6 @@ header>div>.headerLinks {
     padding-right: 20px;
 }
 
-@media screen and (min-width: 800px) {
-    .bigLogo {
-        display: block;
-    }
-
-    .smallLogo {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .bigLogo {
-        display: none;
-    }
-
-    .smallLogo {
-        display: block;
-    }
-}
-
 button {
     border: none;
     color: #a6adba;
@@ -75,4 +55,54 @@ button:hover {
     background-color: #2a323c;
     border-radius: 15px;
 
+}
+
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+footer div {
+    color: #FFF;
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-top {
+    justify-content: space-between;
+}
+
+.footer-bottom {
+    /* height: 40px; */
+    text-align: center;
+}
+
+
+@media screen and (min-width: 800px) {
+    .bigLogo {
+        display: block;
+    }
+
+    .smallLogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bigLogo {
+        display: none;
+    }
+
+    .smallLogo {
+        display: block;
+    }
+
+    .footer-top {
+        align-items: center;
+        flex-direction: column;
+    }
 }
