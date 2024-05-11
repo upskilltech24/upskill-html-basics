@@ -12,6 +12,29 @@
             height: 200px;
             overflow: hidden;
         }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 500px;
+            background-color: rgb(227, 201, 201);
+            color: #000;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
     </style>
 
     <script>
@@ -28,8 +51,14 @@
             }];
             let html = '';
             for (let count = 0; count < jsonString.length; count++) {
-                html += `<div><h1>${jsonString[count].name}</h1><p title>${jsonString[count].description.substring(0, 100)}...</p></div>`;
-                // `<div><div><h1>${jsonString[count].name}</h1></div><p>${jsonString[count].description.substring(0, 100)}...</p></div></div>`;
+                const subStr = jsonString[count].description.substring(0, 100);
+                const fullStr = jsonString[count].description;
+                html += `<div class="desc">
+                        <h1>${jsonString[count].name}</h1>
+                        <p class='tooltip'>${subStr}...
+                            <span class="tooltiptext">${fullStr}</span>
+                        </p>
+                    </div>`;
             }
             document.getElementById('main').innerHTML = html;
         }
@@ -38,7 +67,6 @@
     <style>
         .main {
             display: flex;
-
         }
 
         .main .desc {
@@ -46,8 +74,7 @@
             height: 300px;
             border: 1px solid red;
             margin: 15px;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            padding: 10px;
             white-space: wrap;
         }
     </style>
