@@ -2,113 +2,31 @@
 <html>
 
 <head>
-    <title>Font Awesome Icons</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!--Get your own code at fontawesome.com-->
-    <style>
-        .textBorder {
-            width: 200px;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 500px;
-            background-color: rgb(227, 201, 201);
-            color: #000;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
-    </style>
-
-    <script>
-        function bindContent() {
-            let jsonString = [{
-                name: "Title 1",
-                description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L'
-            }, {
-                name: "Title 2",
-                description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L'
-            }, {
-                name: "Title 3",
-                description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "L'
-            }];
-            let html = '';
-            for (let count = 0; count < jsonString.length; count++) {
-                const subStr = jsonString[count].description.substring(0, 100);
-                const fullStr = jsonString[count].description;
-                html += `<div class="desc">
-                        <h1>${jsonString[count].name}</h1>
-                        <p class='tooltip'>${subStr}...
-                            <span class="tooltiptext">${fullStr}</span>
-                        </p>
-                    </div>`;
-            }
-            document.getElementById('main').innerHTML = html;
-        }
-    </script>
-
-    <style>
-        .main {
-            display: flex;
-        }
-
-        .main .desc {
-            width: 300px;
-            height: 300px;
-            border: 1px solid red;
-            margin: 15px;
-            padding: 10px;
-            white-space: wrap;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
 
-    <h1>Font Awesome icon library</h1>
-
-    <p>Some Font Awesome icons:</p>
-    <i class="fas fa-cloud"></i>
-    <i class="fas fa-heart"></i>
-    <i class="fas fa-car"></i>
-    <i class="fas fa-file"></i>
-    <i class="fas fa-bars"></i>
-
-    <i class="fa-brands fa-tiktok"></i>
-
-    <p>Styled Font Awesome icons (size and color):</p>
-    <i class="fas fa-cloud" style="font-size:24px;"></i>
-    <i class="fas fa-cloud" style="font-size:36px;"></i>
-    <i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
-    <i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
-
-    <div class="textBorder"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        assumenda omnis
-        aperiam facilis?
-        earum. Consequuntur</div>
-
-    <div class="main" id="main">
-
+    <div class="container">
+        <h2>Collapsible Panel</h2>
+        <p>Click on the collapsible panel to open and close it.</p>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">Panel Body dsfdsf dsfsd fs fds</div>
+                    <div class="panel-footer">Panel Footer fsdfds fsd fdsf dsf</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <button onclick="bindContent()">Bind Content</button>
-
 
 </body>
 
